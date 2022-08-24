@@ -19,9 +19,10 @@ btn.addEventListener("click", function(){
   criaTasks(input.value)
 })
 
-input.addEventListener("click", function(){
+input.addEventListener("keypress", function(e){
+  if(e.keycode === 13 ) {
     if(!input.value) return;
     criaTasks(input.value)
   }
-)
+})
 
