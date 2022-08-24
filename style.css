@@ -1,7 +1,9 @@
 
 :root {
-  --primary-color: rgb(17, 86, 102);
+  --primary-color: rgb(183, 179, 221);
   --primary-color-darker: rgb(9, 48, 56);
+  --primary-color-button: #0d75ec;
+  --secundary-color-button: rgb(26, 77, 187);
 }
 
 * {
@@ -22,37 +24,57 @@ body {
   max-width: 640px;
   margin: 50px auto;
   background: #fff;
+  box-shadow: 5px 5px 5px black;
   padding: 20px;
   border-radius: 10px;
+  text-align: center;
 }
 
-form input, form label, form button {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
+.content {
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
-form input {
+h1 {
+  color: blue;
+}
+
+.input-tarefa{
+  width: 75%;
+  height: 45px;
+  padding: 12px;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+}
+
+.btn-tarefa{
+    font-weight: 500;
+    font-size: 15px;
+    background-color: var(--primary-color-button);
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    width: 18%;
+    height: 45px;
+    border-radius: 4px;
+    font-family: 'Poppins',sans-serif;
+    padding: 1px 0;
+}
+
+.tarefas {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   font-size: 24px;
-  height: 50px;
-  padding: 0 20px;
+  list-style: none;
 }
 
-form input:focus {
-  outline: 1px solid var(--primary-color);
-}
-
-form button {
-  border: none;
-  background: var(--primary-color);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
-  cursor: pointer;
-  margin-top: 30px;
-}
-
-form button:hover {
-  background: var(--primary-color-darker);
+button:hover {
+  background: var(--secundary-color-button);
 }
