@@ -5,7 +5,7 @@ const tasks = document.querySelector('.tarefas');
 
 function criaLi(){
   const li = document.createElement("li");
-  return li
+  return li;
 }
 
 function criaTasks(textoInput) {
@@ -19,7 +19,7 @@ btn.addEventListener("click", function(){
   criaTasks(input.value)
 })
 
-input.addEventListener("click", function(e){
+input.addEventListener("click", function(){
     if(!input.value) return;
     criaTasks(input.value)
   }
