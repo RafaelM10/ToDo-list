@@ -3,14 +3,25 @@ const input = document.querySelector('.input-tarefa');
 const btn = document.querySelector('.btn-tarefa');
 const tasks = document.querySelector('.tarefas');
 
-function criaP(){
-  const el = document.createElement("li");
-
-  document.querySelector(".tarefas").appendChild(el);
+function criaLi(){
+  const li = document.createElement("li");
+  return li
 }
 
-function btnEnviar(){
-  let texto = document.querySelector(".input-tarefa").value;
+function criaTasks(textoInput) {
+  const li = criaLi();
+  li.innerText = textoInput;
+  tasks.appendChild(li)
 }
 
-btn.addEventListener("click", btnEnviar);
+btn.addEventListener("click", function(){
+  if(!input.value) return;
+  criaTasks(input.value)
+})
+
+input.addEventListener("click", function(e){
+    if(!input.value) return;
+    criaTasks(input.value)
+  }
+)
+
