@@ -16,13 +16,20 @@ function criaTasks(textoInput) {
 
 btn.addEventListener("click", function(){
   if(!input.value) return;
-  criaTasks(input.value)
+  criaTasks(input.value);
+  clearInput();
 })
 
 input.addEventListener("keypress", function(e){
-  if(e.keycode === 13 ) {
+  if( e.keyCode === 13) {
     if(!input.value) return;
-    criaTasks(input.value)
-  }
-})
+    criaTasks(input.value); 
+    clearInput()
+  } 
+});
+
+function clearInput() {
+  input.value = '';
+  input.focus();
+}
 
