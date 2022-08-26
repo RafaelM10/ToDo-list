@@ -16,18 +16,25 @@ function criaTasks(textoInput) {
 }
 
 function clearInput() {
-  input.value = '';
+  input.value = " ";
   input.focus();
 }
 
 function createBtnDelete(li) {
-  li.innerText += ' ';
-  const btnDelete = document.createElement('button');
-  btnDelete.innerText = 'Apagar';
-  btnDelete.setAttribute('class', 'apagar');
-  btnDelete.setAttribute('title', 'Apagar esta tarefa');
+  li.innerText +=  " ";
+  const btnDelete = document.createElement("button");
+  btnDelete.innerText = "Apagar";
+  btnDelete.setAttribute("class", "apagar");
+  btnDelete.setAttribute("title", "Apagar esta tarefa");
   li.appendChild(btnDelete);
 }
+
+document.addEventListener("click", function(e){
+  const el = e.target;
+  if(el.classList.contains("apagar")) {
+    el.parentElement.remove()
+  }
+})
 
 btn.addEventListener("click", function(){
   if(!input.value) return;
