@@ -2,7 +2,7 @@
   ToDo list
 </h1>
 
-![Screenshot from 2022-08-23 23-15-11](https://user-images.githubusercontent.com/93865745/186302729-afbbd7fa-ac03-4add-91a1-fde2284f00bd.png)
+![Screenshot from 2022-08-25 13-36-42](https://user-images.githubusercontent.com/93865745/186721355-35697194-f662-4a8b-9cfd-6695db23deb3.png)
 
 
 ## 📚 Seções
