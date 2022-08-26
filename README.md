@@ -1,9 +1,8 @@
-<h1 align="center">
-  ToDo list
+<h1>
+  📕 ToDo list
 </h1>
 
-![Screenshot from 2022-08-25 13-36-42](https://user-images.githubusercontent.com/93865745/186721355-35697194-f662-4a8b-9cfd-6695db23deb3.png)
-
+![Screenshot from 2022-08-26 12-39-16](https://user-images.githubusercontent.com/93865745/186942407-e0ded22e-981c-44eb-872f-29cdc037bdbe.png)
 
 ## 📚 Seções
 
