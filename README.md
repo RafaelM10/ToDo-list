@@ -12,7 +12,7 @@ O site é composto por uma seção:
 - Adicione suas tarefas
 - Apague elas 
 - **Conhecimentos:** Nele apresentamos meus conhecimentos em algumas linguagens com o foco no front-end;
-
+- https://rafaelm10.github.io/ToDo-list/
 ---
 
 ## 💼 Tecnologias utilizadas
