@@ -12,6 +12,21 @@ function criaTasks(textoInput) {
   const li = criaLi();
   li.innerText = textoInput;
   tasks.appendChild(li)
+  createBtnDelete(li)
+}
+
+function clearInput() {
+  input.value = '';
+  input.focus();
+}
+
+function createBtnDelete(li) {
+  li.innerText += ' ';
+  const btnDelete = document.createElement('button');
+  btnDelete.innerText = 'Apagar';
+  btnDelete.setAttribute('class', 'apagar');
+  btnDelete.setAttribute('title', 'Apagar esta tarefa');
+  li.appendChild(btnDelete);
 }
 
 btn.addEventListener("click", function(){
@@ -28,8 +43,5 @@ input.addEventListener("keypress", function(e){
   } 
 });
 
-function clearInput() {
-  input.value = '';
-  input.focus();
-}
+
 

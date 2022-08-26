@@ -78,3 +78,28 @@ h1 {
 button:hover {
   background: var(--secundary-color-button);
 }
+
+li {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+  margin: 10px 0;
+}
+
+.apagar {
+    font-weight: 500;
+    font-size: 15px;
+    background-color: red;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    width: 15%;
+    height: 38px;
+    border-radius: 4px;
+    font-family: 'Poppins',sans-serif;
+    padding: 1px 0;
+}
+
+.apagar:hover {
+  background: rgb(156, 22, 22);
+}
